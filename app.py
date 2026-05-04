@@ -5,7 +5,7 @@ import pandas as pd
 from pathlib import Path
 from difflib import SequenceMatcher
 
-st.set_page_config(page_title="AI Reliability Lab", layout="wide")
+st.set_page_config(page_title="AI Reliability Tester", layout="wide")
 
 
 @st.cache_data
@@ -222,7 +222,7 @@ st.markdown("---")
 # =============================================================================
 # KEY-TERM HEATMAP
 # =============================================================================
-st.subheader("🎯 Key-Term Consistency Heatmap")
+st.subheader("Key-Term Consistency Heatmap")
 
 if analysis:
     term_df_data = []
@@ -259,7 +259,7 @@ st.markdown("---")
 # =============================================================================
 # NUMERIC CONSISTENCY + SI-NORMALIZED TABLE
 # =============================================================================
-st.subheader("🔢 Numeric Consistency")
+st.subheader("Numeric Consistency")
 
 if analysis:
     sd = analysis.get("score_data", {})
@@ -309,7 +309,7 @@ st.markdown("---")
 # =============================================================================
 # EXPORT
 # =============================================================================
-st.subheader("📄 Export")
+st.subheader("Export")
 
 if analysis:
     try:
