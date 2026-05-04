@@ -25,9 +25,8 @@ from analyzer import (
 )
 
 
-# ---------------------------------------------------------------------------
 # Fixtures
-# ---------------------------------------------------------------------------
+
 
 @pytest.fixture
 def medical_text():
@@ -59,9 +58,9 @@ def reference():
     )
 
 
-# ---------------------------------------------------------------------------
+
 # ScoringWeights
-# ---------------------------------------------------------------------------
+
 
 class TestScoringWeights:
 
@@ -86,9 +85,9 @@ class TestScoringWeights:
         assert abs(total - 1.0) < 1e-6
 
 
-# ---------------------------------------------------------------------------
+
 # Standard Extraction
-# ---------------------------------------------------------------------------
+
 
 class TestStandardExtraction:
 
@@ -118,9 +117,8 @@ class TestStandardExtraction:
         assert any("CFR" in s for s in found)
 
 
-# ---------------------------------------------------------------------------
+
 # Numeric Extraction — edge cases
-# ---------------------------------------------------------------------------
 
 class TestNumericExtraction:
 
@@ -177,9 +175,9 @@ class TestNumericExtraction:
         assert extract_numbers("No numeric values here.") == []
 
 
-# ---------------------------------------------------------------------------
+
 # Key Terms
-# ---------------------------------------------------------------------------
+
 
 class TestKeyTerms:
 
@@ -211,9 +209,9 @@ class TestKeyTerms:
         assert terms[term] is True
 
 
-# ---------------------------------------------------------------------------
+
 # Shall Extraction
-# ---------------------------------------------------------------------------
+
 
 class TestShallExtraction:
 
@@ -267,9 +265,9 @@ class TestShallExtraction:
         assert len(shalls) == 0
 
 
-# ---------------------------------------------------------------------------
+
 # Semantic Contradiction Detection
-# ---------------------------------------------------------------------------
+
 
 class TestContradictionDetection:
 
@@ -316,9 +314,9 @@ class TestContradictionDetection:
             assert "severity" in c
 
 
-# ---------------------------------------------------------------------------
+
 # Relevance / Refusal Detection
-# ---------------------------------------------------------------------------
+
 
 class TestRelevanceCheck:
 
@@ -348,9 +346,8 @@ class TestRelevanceCheck:
         assert check_output_relevance(refusal) is False
 
 
-# ---------------------------------------------------------------------------
 # Similarity Matrix
-# ---------------------------------------------------------------------------
+
 
 class TestSimilarityMatrix:
 
@@ -380,9 +377,9 @@ class TestSimilarityMatrix:
         assert matrix[0, 1] == pytest.approx(matrix[1, 0], abs=1e-6)
 
 
-# ---------------------------------------------------------------------------
+
 # Reliability Score
-# ---------------------------------------------------------------------------
+
 
 class TestReliabilityScore:
 
@@ -429,9 +426,8 @@ class TestReliabilityScore:
         assert 0 <= score["total_score"] <= 100
 
 
-# ---------------------------------------------------------------------------
 # Full Pipeline
-# ---------------------------------------------------------------------------
+
 
 class TestFullPipeline:
 
