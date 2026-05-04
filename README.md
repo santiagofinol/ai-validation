@@ -1,22 +1,20 @@
 # AI Output Validation Framework
 
-A proof-of-concept tool for testing how consistently a local LLM answers the same engineering prompt.
+A proof of concept tool for testing how consistently a local LLM answers the same engineering prompt.
 
 ---
 
 ## What & Why
 
-I wanted to see what happens when you ask an LLM the same technical question ten times. Do you get the same standards referenced? The same numbers? The same requirement structure? Turns out the answer is "sometimes, but not always" — and I wanted to quantify that.
+I wanted to see the difference in output when you ask an LLM the same technical question ten times. Is it possible to actually get the same standards referenced? The same numbers? The same requirement structure? the answer is "sometimes, but not always" (could probably be most times with better testing)
 
-I chose medical device requirements as the test domain because safety standards are publicly listed and their language is unambiguous ("shall" statements, specific numeric limits). That made it easy to define what a correct, consistent answer looks like. I don't have regulatory expertise — the domain was chosen because it's well-specified, not because I'm a biomedical engineer.
+I chose medical device requirements as the test domain because safety standards are publicly listed and their language is unambiguous ("shall" statements, specific numeric limits). That made it easy to define what a correct, consistent answer looks like. Im not an expert. 
 
 ---
 
 ## What I Learned
 
-This is the section I'd lead with in any conversation about the project.
-
-**Prompt engineering matters more than I expected.** Changing one sentence in the prompt — explicitly asking for "shall" statements — took detected requirements from zero to sixteen per run. The analysis tool didn't change; the prompt did.
+**Prompt engineering matters more than I expected and is probably the most important.** Changing one sentence in the prompt — explicitly asking for "shall" statements — took detected requirements from zero to sixteen per run. The analysis tool didn't change; the prompt did. Still tried to make the prompt not too complex.
 
 **Regex is brittle for NLP.** I spent a lot of time tweaking regex patterns to extract numbers like `43°C` or `100 µA`. The patterns kept breaking on edge cases: ranges like `3.3–5.0 V`, negative temperatures, SI prefixes like `kΩ` or `µA`. The right fix is a unit-parsing library (pint), not more regex.
 
@@ -28,13 +26,13 @@ This is the section I'd lead with in any conversation about the project.
 
 ---
 
-## Honest Limitations
+## Limitations
 
-- Not production-ready. Don't use this for anything that matters without understanding its assumptions.
+- Obviously Not production-ready. Don't use this for anything that matters please.
 - The standards database is manually curated regex. It'll miss new or niche standards and has no live connection to ISO or IEC.
-- No real medical device domain expertise. I chose that domain for its well-defined language, not because I know FDA regulations.
+- Not trained on real medical device expertise. simply used for it being well defined.
 - Scoring weights are empirically tuned heuristics, not validated against human judgement.
-- No semantic contradiction detection yet. The tool won't catch "must be waterproof" in run 3 and "must allow airflow" in run 7. (Keyword-antonym map is implemented as v1.)
+- No semantic contradiction detection yet
 - Local LLM limitations. Llama 3.2 doesn't know medical device regulations well. Scores would improve with a frontier model.
 
 ---
@@ -80,15 +78,15 @@ reference_answer.txt → analyzer.py ────┘
 |-------|---------|
 | ≥75% | Consistent enough to use as a draft starting point with human review |
 | 60–74% | Use with caution; verify everything before relying on it |
-| <60% | Too inconsistent; refine the prompt or switch models |
+| <60% | Too inconsistent; give better prompt or switch models |
 
-These thresholds are heuristics, not validated standards.
+These thresholds are just heuristics, not validated standards.
 
 ---
 
 ## Next Steps
 
-Things I'd actually do next if I kept working on this:
+Things to do if i want to keep working:
 
 1. Replace the keyword-antonym contradiction map with a proper NLI model (e.g., `cross-encoder/nli-MiniLM2-L6-H768`) to catch logical contradictions between runs.
 2. Calibrate scoring weights against human-labelled examples using `scipy.optimize`.
