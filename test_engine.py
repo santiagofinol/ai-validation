@@ -10,7 +10,7 @@ import yaml
 import sys
 from pathlib import Path
 
-# Import our analyzer
+# Import analyzer
 from analyzer import analyze_runs, generate_report
 
 
