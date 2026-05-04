@@ -1,8 +1,7 @@
-# AI Output Validation Framework — Configuration
-# Systems Engineering & AI Workflows — LivaNova-style Medical Device Prompt
+# AI Output Validation Framework
 
 model: "llama3.2"
-temperature: 0.0  # Use 0.0 for consistency testing (deterministic behavior)
+temperature: 0.0  # Use 0.0 for consistency testin (test with 0.4-0.7 were pretty bad) 
 iterations: 10
 
 # The engineering prompt under test (structured to elicit "shall" statements)
