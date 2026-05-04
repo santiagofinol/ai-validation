@@ -1,0 +1,45 @@
+GOLDEN ANSWER: Safety Requirements for Class II Medical Device Battery Housing
+================================================================================
+Reference Standards: IEC 60601-1:2012, FDA 21 CFR Part 820, ISO 14971:2019, ISO 13485:2016
+
+1. ELECTRICAL SAFETY
+   - The battery housing shall provide double insulation or reinforced insulation (Class II construction).
+   - Patient leakage current shall not exceed 100 µA under normal conditions per IEC 60601-1.
+   - Creepage and clearance distances shall be maintained for the rated working voltage.
+   - The housing shall prevent access to live parts during normal use and single-fault conditions.
+
+2. THERMAL SAFETY
+   - The battery housing shall limit surface temperatures to 43°C for parts intended to contact the patient.
+   - Thermal runaway protection shall be provided via battery management system (BMS).
+   - Ventilation or thermal interface materials shall be included if battery heat dissipation exceeds 5W.
+
+3. MECHANICAL SAFETY
+   - The housing shall withstand a 1-meter drop test per IEC 60601-1 without compromising battery integrity.
+   - Battery retention features shall prevent displacement during vibration and shock.
+   - Enclosure integrity shall meet the IP rating required for the intended use environment.
+
+4. BATTERY MANAGEMENT
+   - Overcharge protection shall terminate charging at 100% ± 2% state of charge.
+   - Short-circuit protection shall limit fault current within 1 second.
+   - Over-discharge protection shall disconnect the load at the manufacturer-specified minimum voltage.
+
+5. ELECTROMAGNETIC COMPATIBILITY (EMC)
+   - The battery housing and associated circuitry shall comply with IEC 60601-1-2 for emissions and immunity.
+   - Shielding or filtering shall be provided to prevent EMI from affecting device performance.
+
+6. MATERIAL AND CHEMICAL SAFETY
+   - Housing materials shall be non-toxic and chemically resistant to battery electrolytes.
+   - Patient-contacting surfaces shall meet ISO 10993 biocompatibility requirements where applicable.
+
+7. LABELING AND DOCUMENTATION
+   - The housing shall bear legible warnings, battery type, polarity, and disposal instructions per FDA 21 CFR 801.
+   - Instructions for use shall include safe handling, replacement, and disposal procedures.
+
+8. RISK MANAGEMENT
+   - Battery hazards shall be analyzed per ISO 14971:2019 and mitigated to acceptable risk levels.
+   - A fault tree analysis (FTA) or failure modes and effects analysis (FMEA) shall document battery-related failure modes.
+
+9. REGULATORY COMPLIANCE
+   - The device shall comply with FDA 21 CFR Part 820 Quality System Regulation.
+   - Lithium battery transportation shall meet UN 38.3 testing requirements.
+   - Third-party safety certifications (UL, ETL, CE) shall be obtained as required by target markets.

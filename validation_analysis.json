@@ -1,0 +1,467 @@
+{
+    "score_data": {
+        "total_score": 72.6,
+        "text_similarity": 89.8,
+        "numeric_agreement": 98.1,
+        "key_term_consistency": 42.5,
+        "golden_answer_similarity": 42.9,
+        "relevance_ratio": 100.0,
+        "term_breakdown": {
+            "electrical safety": 100.0,
+            "thermal safety": 100.0,
+            "mechanical safety": 100.0,
+            "overcharge protection": 0.0,
+            "short circuit protection": 0.0,
+            "EMC/EMI": 10.0,
+            "battery management": 0.0,
+            "risk management": 90.0,
+            "labeling": 0.0,
+            "regulatory compliance": 100.0,
+            "patient safety": 0.0,
+            "testing/validation": 10.0
+        },
+        "all_numbers": [
+            [
+                "-20\u00b0C",
+                "50\u00b0C",
+                "-4\u00b0F",
+                "122\u00b0F"
+            ],
+            [
+                "2MM",
+                "4.2V",
+                "40\u00b0C",
+                "104\u00b0F",
+                "-20\u00b0C",
+                "40\u00b0C",
+                "-4\u00b0F",
+                "104\u00b0F",
+                "80%",
+                "40\u00b0C",
+                "104\u00b0F"
+            ],
+            [
+                "2MM",
+                "4.2V",
+                "40\u00b0C",
+                "104\u00b0F",
+                "-20\u00b0C",
+                "40\u00b0C",
+                "-4\u00b0F",
+                "104\u00b0F",
+                "80%",
+                "40\u00b0C",
+                "104\u00b0F"
+            ],
+            [
+                "2MM",
+                "4.2V",
+                "40\u00b0C",
+                "104\u00b0F",
+                "-20\u00b0C",
+                "40\u00b0C",
+                "-4\u00b0F",
+                "104\u00b0F",
+                "80%",
+                "40\u00b0C",
+                "104\u00b0F"
+            ],
+            [
+                "2MM",
+                "4.2V",
+                "40\u00b0C",
+                "104\u00b0F",
+                "-20\u00b0C",
+                "40\u00b0C",
+                "-4\u00b0F",
+                "104\u00b0F",
+                "80%",
+                "40\u00b0C",
+                "104\u00b0F"
+            ],
+            [
+                "2MM",
+                "4.2V",
+                "40\u00b0C",
+                "104\u00b0F",
+                "-20\u00b0C",
+                "40\u00b0C",
+                "-4\u00b0F",
+                "104\u00b0F",
+                "80%",
+                "40\u00b0C",
+                "104\u00b0F"
+            ],
+            [
+                "2MM",
+                "4.2V",
+                "40\u00b0C",
+                "104\u00b0F",
+                "-20\u00b0C",
+                "40\u00b0C",
+                "-4\u00b0F",
+                "104\u00b0F",
+                "80%",
+                "40\u00b0C",
+                "104\u00b0F"
+            ],
+            [
+                "2MM",
+                "4.2V",
+                "40\u00b0C",
+                "104\u00b0F",
+                "-20\u00b0C",
+                "40\u00b0C",
+                "-4\u00b0F",
+                "104\u00b0F",
+                "80%",
+                "40\u00b0C",
+                "104\u00b0F"
+            ],
+            [
+                "2MM",
+                "4.2V",
+                "40\u00b0C",
+                "104\u00b0F",
+                "-20\u00b0C",
+                "40\u00b0C",
+                "-4\u00b0F",
+                "104\u00b0F",
+                "80%",
+                "40\u00b0C",
+                "104\u00b0F"
+            ],
+            [
+                "2MM",
+                "4.2V",
+                "40\u00b0C",
+                "104\u00b0F",
+                "-20\u00b0C",
+                "40\u00b0C",
+                "-4\u00b0F",
+                "104\u00b0F",
+                "80%",
+                "40\u00b0C",
+                "104\u00b0F"
+            ]
+        ],
+        "number_frequencies": {
+            "-20\u00b0C": 10,
+            "50\u00b0C": 1,
+            "-4\u00b0F": 10,
+            "122\u00b0F": 1,
+            "2MM": 9,
+            "4.2V": 9,
+            "40\u00b0C": 27,
+            "104\u00b0F": 27,
+            "80%": 9
+        },
+        "shall_counts": [
+            9,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+        ],
+        "score_explanation": "Text similarity is high \u2014 the model produces consistent vocabulary across runs. Numeric values are highly consistent. Several key concepts appear in only some runs \u2014 coverage is uneven. Overall: CAUTION \u2014 use as a starting point only; requires detailed review.",
+        "contradictions": []
+    },
+    "standards_per_run": [
+        [
+            "IEC 60601-1:2006",
+            "ISO 13485"
+        ],
+        [
+            "ISO 14971:2019",
+            "ISO 13485",
+            "IEC 60601-1:2006"
+        ],
+        [
+            "ISO 14971:2019",
+            "ISO 13485",
+            "IEC 60601-1:2006"
+        ],
+        [
+            "ISO 14971:2019",
+            "ISO 13485",
+            "IEC 60601-1:2006"
+        ],
+        [
+            "ISO 14971:2019",
+            "ISO 13485",
+            "IEC 60601-1:2006"
+        ],
+        [
+            "ISO 14971:2019",
+            "ISO 13485",
+            "IEC 60601-1:2006"
+        ],
+        [
+            "ISO 14971:2019",
+            "ISO 13485",
+            "IEC 60601-1:2006"
+        ],
+        [
+            "ISO 14971:2019",
+            "ISO 13485",
+            "IEC 60601-1:2006"
+        ],
+        [
+            "ISO 14971:2019",
+            "ISO 13485",
+            "IEC 60601-1:2006"
+        ],
+        [
+            "ISO 14971:2019",
+            "ISO 13485",
+            "IEC 60601-1:2006"
+        ]
+    ],
+    "unverified_standards": [],
+    "standard_presence": {
+        "ISO 14971:2019": 9,
+        "IEC 60601-1:2006": 10,
+        "ISO 13485": 10
+    },
+    "terms_per_run": [
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": true,
+            "battery management": false,
+            "risk management": false,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": true
+        },
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": false,
+            "battery management": false,
+            "risk management": true,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": false
+        },
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": false,
+            "battery management": false,
+            "risk management": true,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": false
+        },
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": false,
+            "battery management": false,
+            "risk management": true,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": false
+        },
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": false,
+            "battery management": false,
+            "risk management": true,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": false
+        },
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": false,
+            "battery management": false,
+            "risk management": true,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": false
+        },
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": false,
+            "battery management": false,
+            "risk management": true,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": false
+        },
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": false,
+            "battery management": false,
+            "risk management": true,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": false
+        },
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": false,
+            "battery management": false,
+            "risk management": true,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": false
+        },
+        {
+            "electrical safety": true,
+            "thermal safety": true,
+            "mechanical safety": true,
+            "overcharge protection": false,
+            "short circuit protection": false,
+            "EMC/EMI": false,
+            "battery management": false,
+            "risk management": true,
+            "labeling": false,
+            "regulatory compliance": true,
+            "patient safety": false,
+            "testing/validation": false
+        }
+    ],
+    "shalls_per_run": [
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent electrical arc or spark generation, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent overheating due to thermal runaway, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent excessive temperatures during normal operation, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure due to external forces, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure due to internal forces, including but not limited to:.",
+            "The battery housing shall comply with relevant regulatory requirements, including but not limited to:.",
+            "The battery housing shall undergo rigorous testing and validation to ensure compliance with the above requirements, including but not limited to:."
+        ],
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent over-discharge, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent tampering or unauthorized access, including but not limited to:.",
+            "The battery housing shall be designed and constructed to withstand environmental extremes, including but not limited to:.",
+            "The battery housing shall comply with the relevant regulations and standards for medical devices, including but not limited to:."
+        ],
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent over-discharge, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent tampering or unauthorized access, including but not limited to:.",
+            "The battery housing shall be designed and constructed to withstand environmental extremes, including but not limited to:.",
+            "The battery housing shall comply with the relevant regulations and standards for medical devices, including but not limited to:."
+        ],
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent over-discharge, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent tampering or unauthorized access, including but not limited to:.",
+            "The battery housing shall be designed and constructed to withstand environmental extremes, including but not limited to:.",
+            "The battery housing shall comply with the relevant regulations and standards for medical devices, including but not limited to:."
+        ],
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent over-discharge, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent tampering or unauthorized access, including but not limited to:.",
+            "The battery housing shall be designed and constructed to withstand environmental extremes, including but not limited to:.",
+            "The battery housing shall comply with the relevant regulations and standards for medical devices, including but not limited to:."
+        ],
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent over-discharge, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent tampering or unauthorized access, including but not limited to:.",
+            "The battery housing shall be designed and constructed to withstand environmental extremes, including but not limited to:.",
+            "The battery housing shall comply with the relevant regulations and standards for medical devices, including but not limited to:."
+        ],
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent over-discharge, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent tampering or unauthorized access, including but not limited to:.",
+            "The battery housing shall be designed and constructed to withstand environmental extremes, including but not limited to:.",
+            "The battery housing shall comply with the relevant regulations and standards for medical devices, including but not limited to:."
+        ],
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent over-discharge, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent tampering or unauthorized access, including but not limited to:.",
+            "The battery housing shall be designed and constructed to withstand environmental extremes, including but not limited to:.",
+            "The battery housing shall comply with the relevant regulations and standards for medical devices, including but not limited to:."
+        ],
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent over-discharge, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent tampering or unauthorized access, including but not limited to:.",
+            "The battery housing shall be designed and constructed to withstand environmental extremes, including but not limited to:.",
+            "The battery housing shall comply with the relevant regulations and standards for medical devices, including but not limited to:."
+        ],
+        [
+            "The battery housing shall be designed and constructed to prevent electrical shock, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent over-discharge, including but not limited to:.",
+            "The battery shall be designed and constructed to prevent overheating, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent mechanical failure, including but not limited to:.",
+            "The battery housing shall be designed and constructed to prevent tampering or unauthorized access, including but not limited to:.",
+            "The battery housing shall be designed and constructed to withstand environmental extremes, including but not limited to:.",
+            "The battery housing shall comply with the relevant regulations and standards for medical devices, including but not limited to:."
+        ]
+    ]
+}

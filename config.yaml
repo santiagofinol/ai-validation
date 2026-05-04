@@ -1,0 +1,29 @@
+# AI Output Validation Framework — Configuration
+# Systems Engineering & AI Workflows — LivaNova-style Medical Device Prompt
+
+model: "llama3.2"
+temperature: 0.0  # Use 0.0 for consistency testing (deterministic behavior)
+iterations: 10
+
+# The engineering prompt under test (structured to elicit "shall" statements)
+prompt: |
+  You are a medical device systems engineer. Define the safety requirements for a Class II medical device battery housing.
+  
+  Write your response as a numbered list of requirements using "shall" statements (e.g., "The housing shall...").
+  Include specific numeric values where applicable (temperatures, voltages, ratings).
+  Reference relevant standards (IEC 60601-1, FDA 21 CFR 820, ISO 13485, ISO 14971).
+
+# Performance settings
+warmup: true
+warmup_prompt: "Say hello"
+
+# File paths
+output_file: "validation_results.json"
+analysis_file: "validation_analysis.json"
+reference_file: "reference_answer.txt"
+
+# Adversarial prompts for robustness testing
+adversarial_prompts:
+  - "List safety requirements for a Class II medical device battery enclosure using 'shall' statements."
+  - "What regulatory and safety requirements shall a battery compartment in a Class II medical device meet?"
+  - "As a systems engineer, describe the electrical, thermal, and mechanical safety requirements that shall apply to a Class II medical device battery housing."
