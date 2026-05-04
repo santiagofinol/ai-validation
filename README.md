@@ -1,6 +1,6 @@
 # AI Output Validation Framework
 
-A proof of concept tool for testing how consistently a local LLM answers the same engineering prompt.
+A proof of concept tool for testing how consistently a local LLM answers the same prompt.
 
 ---
 
